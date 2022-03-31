@@ -7,6 +7,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ShortBuffer;
 import java.security.SecureRandom;
+import java.util.Random;
 
 /**
  * An AudioNoise instance offers buffers of noise that we can use when recording
@@ -21,7 +22,7 @@ import java.security.SecureRandom;
 class AudioNoise {
 
     private final static int FRAMES = 1; // After testing, it looks like this is the best setup
-    private final static Random RANDOM = new Random();
+    private final static Random RANDOM = new SecureRandom();
 
     private final ByteBuffer mNoiseBuffer;
 

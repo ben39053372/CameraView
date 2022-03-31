@@ -9,13 +9,14 @@ import com.otaliastudios.cameraview.filter.OneParameterFilter;
 import com.otaliastudios.opengl.core.Egloo;
 
 import java.security.SecureRandom;
+import java.util.Random;
 
 /**
  * Applies film grain effect to the frames.
  */
 public class GrainFilter extends BaseFilter implements OneParameterFilter {
 
-    private final static Random RANDOM = new Random();
+    private final static Random RANDOM = new SecureRandom();
     private final static String FRAGMENT_SHADER = "#extension GL_OES_EGL_image_external : require\n"
             + "precision mediump float;\n"
             + "vec2 seed;\n"

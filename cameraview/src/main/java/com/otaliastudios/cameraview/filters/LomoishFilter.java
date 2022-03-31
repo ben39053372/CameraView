@@ -8,13 +8,14 @@ import com.otaliastudios.cameraview.filter.BaseFilter;
 import com.otaliastudios.opengl.core.Egloo;
 
 import java.security.SecureRandom;
+import java.util.Random;
 
 /**
  * Applies a lomo-camera style effect to the input frames.
  */
 public class LomoishFilter extends BaseFilter {
 
-    private final static Random RANDOM = new Random();
+    private final static Random RANDOM = new SecureRandom();
     private final static String FRAGMENT_SHADER = "#extension GL_OES_EGL_image_external : require\n"
             + "precision mediump float;\n"
             + "uniform samplerExternalOES sTexture;\n"
