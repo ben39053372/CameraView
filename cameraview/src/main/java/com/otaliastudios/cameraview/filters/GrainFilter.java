@@ -8,7 +8,7 @@ import com.otaliastudios.cameraview.filter.BaseFilter;
 import com.otaliastudios.cameraview.filter.OneParameterFilter;
 import com.otaliastudios.opengl.core.Egloo;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 /**
  * Applies film grain effect to the frames.

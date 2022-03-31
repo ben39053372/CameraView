@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import com.otaliastudios.cameraview.filter.BaseFilter;
 import com.otaliastudios.opengl.core.Egloo;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 /**
  * Applies a lomo-camera style effect to the input frames.

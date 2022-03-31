@@ -6,7 +6,7 @@ import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.ShortBuffer;
-import java.util.Random;
+import java.security.SecureRandom;
 
 /**
  * An AudioNoise instance offers buffers of noise that we can use when recording
